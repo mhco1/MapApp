@@ -1,0 +1,133 @@
+{
+    "geocoding": {
+        "version": "0.2",
+        "attribution": "https://geocode.earth/guidelines",
+        "query": {
+            "text": "R. São Joaquim,94 - Liberdade, São Paulo - SP, 01508-000",
+            "size": 10,
+            "private": false,
+            "lang": {
+                "name": "Portuguese",
+                "iso6391": "pt",
+                "iso6393": "por",
+                "via": "header",
+                "defaulted": false
+            },
+            "querySize": 20,
+            "parser": "libpostal",
+            "parsed_text": {
+                "street": "r. são joaquim",
+                "housenumber": "94",
+                "neighbourhood": "liberdade",
+                "city": "são paulo",
+                "state": "sp",
+                "postalcode": "01508-000"
+            }
+        },
+        "engine": {
+            "name": "Pelias",
+            "author": "Mapzen",
+            "version": "1.0"
+        },
+        "timestamp": 1663855904592
+    },
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.641704,
+                    -23.564606
+                ]
+            },
+            "properties": {
+                "id": "85765233",
+                "gid": "whosonfirst:neighbourhood:85765233",
+                "layer": "neighbourhood",
+                "source": "whosonfirst",
+                "source_id": "85765233",
+                "country_code": "BR",
+                "name": "Liberdade",
+                "confidence": 0.6,
+                "match_type": "fallback",
+                "accuracy": "centroid",
+                "country": "Brasil",
+                "country_gid": "whosonfirst:country:85633009",
+                "country_a": "BRA",
+                "macroregion": "Sudeste",
+                "macroregion_gid": "whosonfirst:macroregion:1511777411",
+                "region": "São Paulo",
+                "region_gid": "whosonfirst:region:85682041",
+                "region_a": "SP",
+                "county": "São Paulo",
+                "county_gid": "whosonfirst:county:102062255",
+                "localadmin": "Jardim Paulista",
+                "localadmin_gid": "whosonfirst:localadmin:404567359",
+                "locality": "São Paulo",
+                "locality_gid": "whosonfirst:locality:101965533",
+                "neighbourhood": "Liberdade",
+                "neighbourhood_gid": "whosonfirst:neighbourhood:85765233",
+                "continent": "América do Sul",
+                "continent_gid": "whosonfirst:continent:102191577",
+                "label": "Liberdade, São Paulo, Brasil"
+            },
+            "bbox": [
+                -46.654389971,
+                -23.589160276,
+                -46.6234637846,
+                -23.5526576348
+            ]
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -46.631613,
+                    -23.566977
+                ]
+            },
+            "properties": {
+                "id": "404567369",
+                "gid": "whosonfirst:localadmin:404567369",
+                "layer": "localadmin",
+                "source": "whosonfirst",
+                "source_id": "404567369",
+                "country_code": "BR",
+                "name": "Liberdade",
+                "confidence": 0.6,
+                "match_type": "fallback",
+                "accuracy": "centroid",
+                "country": "Brasil",
+                "country_gid": "whosonfirst:country:85633009",
+                "country_a": "BRA",
+                "macroregion": "Sudeste",
+                "macroregion_gid": "whosonfirst:macroregion:1511777411",
+                "region": "São Paulo",
+                "region_gid": "whosonfirst:region:85682041",
+                "region_a": "SP",
+                "county": "São Paulo",
+                "county_gid": "whosonfirst:county:102062255",
+                "localadmin": "Liberdade",
+                "localadmin_gid": "whosonfirst:localadmin:404567369",
+                "continent": "América do Sul",
+                "continent_gid": "whosonfirst:continent:102191577",
+                "label": "Liberdade, SP, Brasil"
+            },
+            "bbox": [
+                -46.641065,
+                -23.578789,
+                -46.62272,
+                -23.554499
+            ]
+        }
+    ],
+    "bbox": [
+        -46.654389971,
+        -23.589160276,
+        -46.62272,
+        -23.5526576348
+    ]
+}

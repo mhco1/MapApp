@@ -10,8 +10,9 @@
         "**/.expo-shared": true,
         "**/node_modules": true,
         "**/babel.config.js": true,
+        "**/jsconfig.json": true,
         "**/package-lock.json": true,
-        "**/.gitignore": true,
+        "**/.gitignore": true
     },
     "explorerExclude.backup": {}
 }

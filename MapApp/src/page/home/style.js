@@ -1,11 +1,10 @@
-import { StyleSheet, View } from "react-native-web";
+import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
     container:{
         flex:1,
         bacgroundColor: '#fff',
         alignItems: 'center',
+        justifyContent: 'center'
     }
 })
-
-//export default (props)=>(<><View style={style} > {props.children} </View></>)

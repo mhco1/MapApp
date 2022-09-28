@@ -1,16 +1,28 @@
+import { View } from 'react-native';
+import { useState } from 'react';
+import { QueryClient, QueryClientProvider } from 'react-query'
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
-import index from './index.js'
 
-import style from './style/style.js';
+import conf from './conf.json'
+import { useGlobal, GlobalProvider } from '~/context/Global.js'
+import Page from '~/page/manger.js'
+
+var queryClient = new QueryClient({});
 
 export default function App() {
-  return (
-    <>
-      <View style={style.container}>
-        {index}
-      </View>
-      <StatusBar style="auto" />
-    </>
-  );
+    var [page, setPage] = useState(conf.pageDef);
+
+    console.log(page);
+    conf.setPage = setPage;
+
+    return (
+        <>
+            <QueryClientProvider client={queryClient}>
+                <GlobalProvider def={conf}>
+                    <Page page={page} />
+                    <StatusBar style="auto" />
+                </GlobalProvider>
+            </QueryClientProvider>
+        </>
+    );
 }
