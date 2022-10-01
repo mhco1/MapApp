@@ -4,7 +4,7 @@ import { useRef } from 'react/cjs/react.development'
 
 import loc from '~/api/location.js'
 //import {getCurrentPositionAsync} from 'expo-location'
-import useIdRegister from '~/hooks/useIdRegister.js'
+import useIdRegister from '~/hooks/register.js'
 
 export default function () {
     var res;

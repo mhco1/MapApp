@@ -12,7 +12,6 @@ var queryClient = new QueryClient({});
 export default function App() {
     var [page, setPage] = useState(conf.pageDef);
 
-    console.log(page);
     conf.setPage = setPage;
 
     return (
