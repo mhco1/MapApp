@@ -6,23 +6,22 @@ import iniImp from '~/import/initialize.js'
 var { CompLoc } = iniImp('components/form/components');
 
 export default function ({ data }) {
-    var res;
     var obj = {};
+    var [dataState, setDataState] = useState({});
 
-    [obj.data, obj.setData] = useState({});
-
-    res = (<>
+    return <>
         {data.map((el, id) =>
             <CompLoc
                 comp='item'
                 key={id}
                 name={el}
-                {...obj}
+                data={{
+                    get:dataState,
+                    set:setDataState
+                }}
             />
         )}
         <CompLoc comp='submit'/>
-        <Text>Dados dos campos: {JSON.stringify(obj.data)}</Text>
-    </>)
-
-    return res
+        <Text>Dados dos campos: {JSON.stringify(dataState)}</Text>
+    </>
 }

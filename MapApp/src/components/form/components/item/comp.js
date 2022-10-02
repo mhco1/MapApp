@@ -3,13 +3,13 @@ import style from './style.js'
 import iniImp from '~/import/initialize.js'
 var { CompStd, fn } = iniImp('components/form/components/item');
 
-export default function ({ name, data, setData }) {
+export default function ({ name, data }) {
     var [convertPrototype, loading] = fn`convert prototype`();
     var propName = convertPrototype(name);
 
     var handle = {
         change(event = {}) {
-            setData(prev => ({
+            data.set(prev => ({
                 ...prev,
                 [propName]: event.target.value
             }));
@@ -21,7 +21,7 @@ export default function ({ name, data, setData }) {
     return (<>
         <CompStd comp='input'
             label = {name}
-            value = {data[propName]}
+            value = {data.get[propName]}
             change = {handle.change}
         ></CompStd>
     </>)
